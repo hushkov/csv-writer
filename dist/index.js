@@ -32,18 +32,32 @@ writer.addRows([
     { id: 3, amount: 100, to: 'alina', notes: 'for smm work' },
 ]);
 writer.save('../data/payments.csv');
-const collectionOne = {
-    data: ['wednesday', 'fester', 'pugsley', 'gomes', 'mortisha'],
-    name: 'addams family'
-};
-const collectionTwo = {
-    data: [3, 6, 9, 12, 17, 33, 69, 96],
-    name: 'lucky numbers'
-};
-const getRandomCollectionItem = (colleciton) => {
-    const index = Math.floor(Math.random() * colleciton.data.length);
-    return colleciton.data[index];
-};
-const itemOne = getRandomCollectionItem(collectionOne);
-const itemTwo = getRandomCollectionItem(collectionTwo);
-console.log({ itemOne, itemTwo });
+// ----------------
+// Generic Interfaces
+// ----------------
+//
+// interface Collection<T> {
+//     data: T[]
+//     name: string
+// }
+//
+// const collectionOne: Collection<string> = {
+//     data: ['wednesday', 'fester', 'pugsley', 'gomez', 'morticia'],
+//     name: 'addams family'
+// }
+//
+// const collectionTwo: Collection<number> = {
+//     data: [3, 6, 9, 12, 17, 33, 69, 96],
+//     name: 'lucky numbers'
+// }
+//
+// const getRandomCollectionItem = <T>(colleciton: Collection<T>): T => {
+//     const index = Math.floor(Math.random() * colleciton.data.length)
+//
+//     return colleciton.data[index]
+// }
+//
+// const itemOne = getRandomCollectionItem<string>(collectionOne);
+// const itemTwo = getRandomCollectionItem(collectionTwo);
+//
+// console.log({ itemOne, itemTwo })
