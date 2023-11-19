@@ -1,0 +1,23 @@
+{
+  "name": "csvwriter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hushkov/csv-writer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hushkov/csv-writer/issues"
+  },
+  "homepage": "https://github.com/hushkov/csv-writer#readme",
+  "dependencies": {
+    "@types/node": "^20.9.2"
+  }
+}
