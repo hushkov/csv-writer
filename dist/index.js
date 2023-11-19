@@ -32,3 +32,18 @@ writer.addRows([
     { id: 3, amount: 100, to: 'alina', notes: 'for smm work' },
 ]);
 writer.save('../data/payments.csv');
+const collectionOne = {
+    data: ['wednesday', 'fester', 'pugsley', 'gomes', 'mortisha'],
+    name: 'addams family'
+};
+const collectionTwo = {
+    data: [3, 6, 9, 12, 17, 33, 69, 96],
+    name: 'lucky numbers'
+};
+const getRandomCollectionItem = (colleciton) => {
+    const index = Math.floor(Math.random() * colleciton.data.length);
+    return colleciton.data[index];
+};
+const itemOne = getRandomCollectionItem(collectionOne);
+const itemTwo = getRandomCollectionItem(collectionTwo);
+console.log({ itemOne, itemTwo });
